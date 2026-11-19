@@ -1,0 +1,23 @@
+# dependencies and build output
+node_modules/
+extension/dist/
+
+# local datasets: stream audio, transcripts, caches. Third-party content, never commit.
+dev/data/
+
+# safety net for stray media and caches anywhere else
+*.m4a
+*.aac
+*.mp4
+*.m4s
+*.wav
+*.npz
+!test/fixtures/features.wav
+
+# python
+__pycache__/
+*.pyc
+
+# misc
+*.log
+.DS_Store

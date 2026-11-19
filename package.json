@@ -1,0 +1,18 @@
+{
+  "name": "chzzk-skip-silence",
+  "private": true,
+  "license": "MIT",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "치지직 다시보기에서 말소리가 없는 구간을 감지해 건너뛰는 크롬 확장",
+  "scripts": {
+    "build": "node build.mjs",
+    "check:policy": "node dev/check_policy.mjs",
+    "check:browser": "node dev/check_browser.mjs",
+    "test": "node test/check_features.mjs && node test/check_model.mjs && node test/check_dash.mjs && node test/check_hls.mjs && node test/check_analyser.mjs && node test/check_mpegts.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright": "^1.65.0"
+  }
+}
