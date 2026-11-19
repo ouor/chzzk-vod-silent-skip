@@ -21,3 +21,6 @@ __pycache__/
 # misc
 *.log
 .DS_Store
+
+# release packages (npm run package)
+*.zip

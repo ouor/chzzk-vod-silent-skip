@@ -33,13 +33,14 @@
 
 ## 설치
 
-웹스토어에는 아직 없습니다. [Node.js](https://nodejs.org/)로 빌드한 뒤
-`chrome://extensions`에서 개발자 모드를 켜고 `extension/` 폴더를 불러옵니다.
+웹스토어에는 아직 없습니다.
 
-```bash
-npm install
-npm run build
-```
+1. [Releases](https://github.com/ouor/chzzk-vod-silent-skip/releases/latest)에서
+   `chzzk-skip-silence-<버전>.zip`을 받아 압축을 풉니다.
+2. `chrome://extensions`에서 오른쪽 위 **개발자 모드**를 켭니다.
+3. **압축해제된 확장 프로그램을 로드**를 누르고 압축을 푼 폴더를 고릅니다.
+
+새 버전으로 바꿀 때는 같은 폴더에 덮어쓰고 확장 카드의 새로고침 버튼을 누르면 설정이 유지됩니다.
 
 ## 알아둘 점
 
@@ -51,6 +52,8 @@ npm run build
 ## 개발
 
 ```bash
+npm run build            # extension/dist 빌드 (소스에서 직접 불러올 때는 extension/ 폴더)
+npm run package          # 릴리스용 zip
 npm test                 # 단위 테스트
 npm run check:browser -- https://chzzk.naver.com/video/<번호>   # 실제 다시보기에서 동작 확인
 ```

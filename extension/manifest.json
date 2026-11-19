@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "치지직 무음 구간 건너뛰기",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "다시보기에서 말소리가 없는 구간을 감지해 자동으로 건너뜁니다.",
   "minimum_chrome_version": "116",
   "permissions": ["storage"],
